@@ -1,28 +1,279 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ИСКУССТВО — ногтевая студия в Казани</title><meta name="description" content="Демо-концепция сайта студии ИСКУССТВО"><style>
-:root{--bg:#f6efe9;--paper:#fffaf6;--ink:#241b18;--muted:#746861;--wine:#6b2f34;--line:#ddcfc5}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}a{text-decoration:none;color:inherit}.w{width:min(1120px,calc(100% - 28px));margin:auto}
-header{position:sticky;top:0;z-index:10;background:rgba(246,239,233,.92);backdrop-filter:blur(14px);border-bottom:1px solid #eadfd7}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:Georgia,serif;letter-spacing:.14em;font-weight:700}
-.btn{display:inline-flex;padding:13px 18px;border-radius:999px;border:1px solid var(--line);font-weight:700}.primary{background:var(--wine);color:#fff;border-color:var(--wine)}
-.hero{padding:90px 0 70px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;right:-120px;top:70px;background:radial-gradient(circle,#d8b0a0,#9c5c50 55%,#6b2f34);opacity:.9}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;position:relative;z-index:1}
-.ey{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--wine);font-weight:800}.hero h1,.title{font-family:Georgia,serif;font-weight:500;letter-spacing:-.04em}.hero h1{font-size:clamp(58px,8vw,104px);line-height:.9;margin:16px 0 22px}.hero p{font-size:24px;max-width:700px;color:#51433d}
-.cardhero{background:linear-gradient(145deg,#241b18,#6b2f34,#c2856c);color:#fff;border-radius:36px;padding:34px;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 30px 80px rgba(60,30,25,.25)}.cardhero b{font-family:Georgia,serif;font-size:52px;line-height:.95}
-.facts{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px}.facts strong{font-size:24px;display:block}.facts span{font-size:13px;color:var(--muted)}
-section{padding:76px 0}.head{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:end;margin-bottom:30px}.title{font-size:clamp(40px,5vw,66px);line-height:1;margin:6px 0 0}.copy{color:var(--muted);font-size:18px}
-.dark{background:#211916;color:#fff}.dark .copy{color:#c8bbb3}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:26px;background:rgba(255,255,255,.04)}.card h3{font-size:22px}.card p{color:#c8bbb3}
-.services{display:grid;grid-template-columns:1fr 1fr;gap:14px}.service{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px 24px;display:flex;justify-content:space-between;gap:20px}.service span{font-weight:800;color:var(--wine);white-space:nowrap}
-.rating{display:grid;grid-template-columns:.8fr 1.2fr;gap:16px}.box{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:30px}.big{font-family:Georgia,serif;font-size:86px;line-height:.9}.stars{font-size:22px;letter-spacing:.13em;color:#9b6843;margin:16px 0}
-.gift{background:linear-gradient(135deg,#6b2f34,#a65e4e,#d59b80);color:#fff;border-radius:32px;padding:42px}.gift h2{font-family:Georgia,serif;font-size:50px;line-height:1;margin:8px 0 16px}.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}.box h3{font-family:Georgia,serif;font-size:34px;margin-top:0}.row{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--line)}.row span:last-child{text-align:right;font-weight:700}
-.cta{text-align:center}.cta h2{font-family:Georgia,serif;font-size:clamp(44px,6vw,76px);line-height:1;max-width:850px;margin:0 auto 20px}.note{font-size:12px;color:#8e8179;margin-top:18px}.sticky{display:none;position:fixed;bottom:12px;left:12px;right:12px;background:var(--wine);color:#fff;padding:15px;border-radius:16px;text-align:center;font-weight:800;z-index:30}
-@media(max-width:820px){.grid,.head,.rating,.contact{grid-template-columns:1fr}.cardhero{max-width:420px}.hero:after{right:-250px}.cards{grid-template-columns:1fr}.services{grid-template-columns:1fr}}@media(max-width:620px){.w{width:min(100% - 22px,1120px)}.hero{padding:62px 0}.hero h1{font-size:58px}.hero p{font-size:20px}.cardhero{aspect-ratio:1/1.05}.cardhero b{font-size:44px}section{padding:56px 0}.gift{padding:28px 22px}.sticky{display:block}body{padding-bottom:76px}}
-</style></head><body>
-<header><div class="w nav"><div class="brand">ИСКУССТВО</div><a class="btn primary" href="https://taplink.cc/iskusstvo.studio" target="_blank">Записаться</a></div></header>
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ИСКУССТВО — ногтевая студия в Казани</title>
+<meta name="description" content="Демо-концепция сайта студии «Искусство» — премиальный уход и арт-пространство в Казани.">
+<meta name="theme-color" content="#171311">
+<style>
+:root{
+  --ink:#171311; --paper:#f4efe9; --cream:#fffaf5; --wine:#7d343d;
+  --rose:#c47c69; --sand:#d8c4b5; --muted:#776b64; --line:#ddd0c6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.45;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+.serif{font-family:Georgia,"Times New Roman",serif}
+.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;font-weight:800;color:var(--wine)}
+header{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(244,239,233,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(50,35,30,.08)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-family:Georgia,serif;font-weight:700;letter-spacing:.16em;font-size:19px}
+.navRight{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;border:1px solid var(--line);font-weight:800;transition:.2s;background:rgba(255,255,255,.45)}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.wine{background:var(--wine);color:#fff;border-color:var(--wine)}
+.hero{min-height:860px;padding:140px 0 72px;position:relative;display:flex;align-items:center;overflow:hidden}
+.hero:before{content:"";position:absolute;width:650px;height:650px;border-radius:50%;right:-160px;top:110px;background:radial-gradient(circle at 32% 28%,#efd8ca 0,#ca8d78 30%,#8d4449 62%,#4f2429 100%);box-shadow:0 60px 120px rgba(75,35,35,.24)}
+.hero:after{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(80,45,40,.18);border-radius:50%;right:360px;bottom:-80px}
+.heroGrid{display:grid;grid-template-columns:1.18fr .82fr;gap:54px;align-items:center;position:relative;z-index:2}
+.hero h1{font-family:Georgia,serif;font-size:clamp(70px,10vw,138px);font-weight:400;line-height:.78;letter-spacing:-.06em;margin:18px 0 30px;max-width:900px}
+.hero .lead{font-size:clamp(21px,2.3vw,31px);max-width:740px;color:#463a35;margin:0 0 28px}
+.hero .sub{max-width:660px;color:var(--muted);font-size:16px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.metrics{display:flex;gap:26px;flex-wrap:wrap;margin-top:36px}
+.metric strong{display:block;font-size:27px;letter-spacing:-.04em}
+.metric span{font-size:12px;color:var(--muted)}
+.poster{width:min(400px,100%);margin-left:auto;aspect-ratio:4/5.25;border-radius:40px;background:linear-gradient(160deg,#171311 0%,#442321 36%,#7d343d 68%,#d09074 100%);color:white;box-shadow:0 40px 110px rgba(61,26,27,.28);padding:32px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(1.7deg);position:relative;overflow:hidden}
+.poster:before{content:"";position:absolute;width:250px;height:250px;border:1px solid rgba(255,255,255,.23);border-radius:50%;right:-95px;top:80px}
+.poster:after{content:"";position:absolute;width:92px;height:92px;background:#f0d5c7;border-radius:50%;left:40px;bottom:96px;mix-blend-mode:screen;opacity:.7}
+.posterTop,.posterBottom{font-size:10px;text-transform:uppercase;letter-spacing:.18em;opacity:.74;position:relative;z-index:2}
+.posterTitle{font-family:Georgia,serif;font-size:62px;line-height:.85;letter-spacing:-.05em;position:relative;z-index:2}
+.posterTitle i{font-weight:400;color:#e2b29c}
+.marquee{background:var(--ink);color:#fff;overflow:hidden;border-top:1px solid #000;border-bottom:1px solid #000}
+.marqueeInner{white-space:nowrap;padding:17px 0;font-size:13px;letter-spacing:.22em;text-transform:uppercase;opacity:.95}
+section{padding:92px 0}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:end;margin-bottom:40px}
+.head h2{font-family:Georgia,serif;font-size:clamp(44px,5.4vw,74px);font-weight:400;line-height:.94;letter-spacing:-.045em;margin:8px 0 0}
+.copy{color:var(--muted);font-size:18px;max-width:590px}
+.serviceGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+.serviceBig,.serviceSmall{border-radius:32px;padding:36px;position:relative;overflow:hidden;min-height:380px}
+.serviceBig{background:#fffaf5;border:1px solid var(--line)}
+.serviceSmall{background:var(--wine);color:white}
+.serviceBig h3,.serviceSmall h3{font-family:Georgia,serif;font-size:44px;font-weight:400;margin:8px 0 16px}
+.priceList{display:grid;gap:0;margin-top:24px}
+.price{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid rgba(90,60,50,.14)}
+.price span:last-child{font-weight:900;white-space:nowrap}
+.serviceSmall .price{border-color:rgba(255,255,255,.18)}
+.serviceSmall .eyebrow{color:#efc5b2}
+.orb{position:absolute;border-radius:50%;right:-70px;bottom:-80px;width:260px;height:260px;background:linear-gradient(135deg,#e8c3af,#b86458);opacity:.55}
+.dark{background:var(--ink);color:#fff}
+.dark .eyebrow{color:#d8a58f}.dark .copy{color:#c6b7ae}
+.comfort{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.comfortCard{border:1px solid rgba(255,255,255,.12);border-radius:26px;padding:26px;min-height:210px;background:rgba(255,255,255,.035)}
+.comfortCard .icon{font-family:Georgia,serif;font-size:42px;color:#d6947e;margin-bottom:24px}
+.comfortCard h3{font-size:19px;margin:0 0 8px}.comfortCard p{margin:0;color:#c7b9b1;font-size:15px}
+.trust{display:grid;grid-template-columns:.72fr 1.28fr;gap:16px}
+.score,.trustCopy{background:var(--cream);border:1px solid var(--line);border-radius:32px;padding:36px}
+.scoreNum{font-family:Georgia,serif;font-size:112px;line-height:.8;letter-spacing:-.06em}
+.stars{letter-spacing:.14em;color:#a8754e;font-size:20px;margin:22px 0 10px}
+.trustCopy blockquote{font-family:Georgia,serif;font-size:clamp(28px,3.2vw,42px);line-height:1.12;margin:0 0 20px}
+.trustCopy p{color:var(--muted);font-size:17px}
+.gift{background:linear-gradient(135deg,#6d2c35,#a4524c 55%,#d28d74);border-radius:38px;color:#fff;padding:50px;display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;box-shadow:0 35px 90px rgba(80,35,35,.18)}
+.gift h3{font-family:Georgia,serif;font-size:clamp(42px,5vw,70px);font-weight:400;line-height:.96;margin:8px 0 18px}
+.gift p{font-size:18px;color:#f2ddd3}
+.ticket{background:#f4e8dd;color:#3f2e2a;border-radius:26px;padding:30px;transform:rotate(-2deg);box-shadow:0 25px 60px rgba(50,20,20,.25)}
+.ticketTop{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+.ticketTitle{font-family:Georgia,serif;font-size:45px;line-height:.95;margin:40px 0}
+.ticketLine{height:1px;background:#baa79b}
+.contactGrid{display:grid;grid-template-columns:.95fr 1.05fr;gap:16px}
+.contactCard,.mapCard{background:var(--cream);border:1px solid var(--line);border-radius:32px;padding:34px}
+.contactCard h3{font-family:Georgia,serif;font-size:42px;font-weight:400;margin:6px 0 16px}
+.rows{margin:22px 0}
+.row{display:flex;justify-content:space-between;gap:24px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row span:first-child{color:var(--muted)}.row span:last-child{text-align:right;font-weight:800}
+.mapCard{min-height:390px;background:
+radial-gradient(circle at 72% 32%,rgba(125,52,61,.14),transparent 25%),
+linear-gradient(90deg,rgba(60,40,30,.04) 1px,transparent 1px),
+linear-gradient(rgba(60,40,30,.04) 1px,transparent 1px),#eee4dc;background-size:auto,34px 34px,34px 34px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pin{width:120px;height:120px;background:var(--wine);border-radius:50% 50% 50% 8px;transform:rotate(-45deg);display:grid;place-items:center;box-shadow:0 20px 50px rgba(90,35,35,.25)}
+.pin span{transform:rotate(45deg);color:white;font-family:Georgia,serif;font-size:30px}
+.final{padding:110px 0 130px;text-align:center}
+.final h2{font-family:Georgia,serif;font-size:clamp(52px,7vw,96px);font-weight:400;line-height:.93;letter-spacing:-.05em;max-width:900px;margin:0 auto 24px}
+.final p{color:var(--muted);font-size:18px;max-width:650px;margin:0 auto 28px}
+footer{border-top:1px solid var(--line);padding:28px 0 100px;color:#8a7e77;font-size:12px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.sticky{display:none;position:fixed;z-index:60;left:12px;right:12px;bottom:12px;padding:16px;background:var(--wine);color:white;border-radius:18px;text-align:center;font-weight:900;box-shadow:0 20px 50px rgba(65,25,25,.32)}
+@media(max-width:900px){
+.heroGrid,.head,.serviceGrid,.trust,.gift,.contactGrid{grid-template-columns:1fr}
+.poster{margin:28px 0 0;max-width:430px}.comfort{grid-template-columns:1fr 1fr}.hero:before{right:-330px}
+}
+@media(max-width:620px){
+.wrap{width:min(100% - 22px,1180px)}.nav{height:64px}.brand{font-size:15px}.navRight .ghost{display:none}
+.hero{min-height:auto;padding:112px 0 58px}.hero h1{font-size:62px}.hero .lead{font-size:20px}.poster{aspect-ratio:1/1.08;border-radius:30px}.posterTitle{font-size:48px}
+.metrics{gap:18px}.metric strong{font-size:23px}section{padding:62px 0}.head h2{font-size:46px}.copy{font-size:16px}
+.serviceBig,.serviceSmall{padding:26px;min-height:auto}.serviceBig h3,.serviceSmall h3{font-size:38px}.comfort{grid-template-columns:1fr}
+.scoreNum{font-size:84px}.gift{padding:30px 22px;border-radius:28px}.ticket{padding:24px}.ticketTitle{font-size:38px}
+.contactCard,.mapCard{padding:25px}.mapCard{min-height:300px}.final{padding:75px 0 105px}.sticky{display:block}footer{padding-bottom:90px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">ИСКУССТВО</div>
+    <div class="navRight">
+      <a class="btn ghost" href="tel:+79600647474">+7 960 064-74-74</a>
+      <a class="btn primary" href="https://taplink.cc/iskusstvo.studio" target="_blank" rel="noopener">Записаться</a>
+    </div>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div class="w grid"><div><div class="ey">Ногтевая студия · Казань</div><h1>Красота как искусство</h1><p>Премиальный уход и эстетичное пространство, где маникюр становится частью вашего образа.</p><p><a class="btn primary" href="https://taplink.cc/iskusstvo.studio" target="_blank">Записаться онлайн</a></p><div class="facts"><div><strong>5,0</strong><span>рейтинг Яндекс</span></div><div><strong>311</strong><span>оценок</span></div><div><strong>09:00–21:00</strong><span>ежедневно</span></div></div></div><div class="cardhero"><span>DEMO CONCEPT · 2026</span><b>ИСКУССТВО</b><span>минимализм · уход · детали</span></div></div></section>
-<section class="dark"><div class="w"><div class="head"><div><div class="ey" style="color:#d5a895">Концепция</div><h2 class="title">Не просто маникюр</h2></div><div class="copy">Отдельный сайт собирает атмосферу, прайс, доверие и онлайн-запись в одном месте, вместо переходов между Яндексом, Taplink и соцсетями.</div></div><div class="cards"><div class="card"><h3>Эстетика бренда</h3><p>Спокойный премиальный визуальный язык без шаблонного «розового салона».</p></div><div class="card"><h3>Понятный прайс</h3><p>Клиент видит ключевые услуги и цены сразу.</p></div><div class="card"><h3>Запись за один клик</h3><p>Любой ключевой экран ведёт к действующей онлайн-записи.</p></div></div></div></section>
-<section><div class="w"><div class="head"><div><div class="ey">Прайс</div><h2 class="title">Популярные услуги</h2></div><div class="copy">В демо использованы опубликованные цены студии.</div></div><div class="services"><div class="service"><strong>Маникюр женский без покрытия</strong><span>1 600 ₽</span></div><div class="service"><strong>Педикюр женский без покрытия</strong><span>1 800 ₽</span></div><div class="service"><strong>Мужской маникюр</strong><span>1 800 ₽</span></div><div class="service"><strong>Маникюр с покрытием лаком</strong><span>1 900 ₽</span></div><div class="service"><strong>Японский маникюр</strong><span>1 900 ₽</span></div><div class="service"><strong>Педикюр с покрытием лаком</strong><span>2 100 ₽</span></div></div></div></section>
-<section><div class="w rating"><div class="box"><div class="ey">Репутация</div><div class="big">5,0</div><div class="stars">★★★★★</div><p>311 оценок на Яндекс Картах<br>«Хорошее место 2026»</p></div><div class="box"><div class="ey">Почему сайт работает</div><h3>Сильный рейтинг уже продаёт студию.</h3><p class="copy">На отдельной странице он оказывается рядом с услугами, ценами и записью — клиенту проще принять решение, не уходя на другие площадки.</p></div></div></section>
-<section><div class="w gift"><div class="ey" style="color:#f1c8b5">Подарочный сертификат</div><h2>Красивый подарок без лишних сомнений</h2><p>Отдельный блок делает сертификат заметным для тех, кто пришёл не записываться, а выбирает подарок.</p><a class="btn" style="background:#fff;color:#5f3030;border-color:#fff" href="https://taplink.cc/iskusstvo.studio" target="_blank">Подробнее</a></div></section>
-<section><div class="w contact"><div class="box"><h3>Студия «Искусство»</h3><div class="row"><span>Адрес</span><span>Казань, Чистопольская, 74</span></div><div class="row"><span>Режим</span><span>ежедневно 09:00–21:00</span></div><div class="row"><span>Телефон</span><span>+7 (960) 064-74-74</span></div><p><a class="btn primary" href="https://taplink.cc/iskusstvo.studio" target="_blank">Онлайн-запись</a></p></div><div class="box"><h3>Демо-концепция</h3><p class="copy">После согласования сюда можно добавить реальные фотографии работ, мастеров, полный прайс, акции, аналитику и отдельные страницы услуг.</p><div class="note">Не является официальным сайтом студии «Искусство».</div></div></div></section>
-<section class="cta"><div class="w"><div class="ey">ИСКУССТВО</div><h2>Выберите удобное время для себя</h2><p><a class="btn primary" href="https://taplink.cc/iskusstvo.studio" target="_blank">Записаться онлайн</a></p></div></section>
-</main><a class="sticky" href="https://taplink.cc/iskusstvo.studio" target="_blank">Записаться онлайн</a>
-</body></html>
+<section class="hero">
+  <div class="wrap heroGrid">
+    <div>
+      <div class="eyebrow">Казань · Чистопольская, 74</div>
+      <h1>Красота<br>как искусство</h1>
+      <p class="lead">Синтез премиального ухода и арт-пространства — маникюр, педикюр, уход и косметика в одном эстетичном месте.</p>
+      <p class="sub">Страница собрана так, чтобы клиент сразу почувствовал атмосферу студии, увидел сильную репутацию, услуги и без лишних переходов дошёл до записи.</p>
+      <div class="actions">
+        <a class="btn wine" href="https://taplink.cc/iskusstvo.studio" target="_blank" rel="noopener">Записаться онлайн</a>
+        <a class="btn" href="#services">Услуги и цены</a>
+      </div>
+      <div class="metrics">
+        <div class="metric"><strong>5,0</strong><span>рейтинг на Яндексе</span></div>
+        <div class="metric"><strong>350+</strong><span>оценок</span></div>
+        <div class="metric"><strong>09–21</strong><span>ежедневно</span></div>
+      </div>
+    </div>
+    <div class="poster">
+      <div class="posterTop">nail studio · kazan · 2026</div>
+      <div class="posterTitle">ИСКУС<br><i>СТВО</i></div>
+      <div class="posterBottom">маникюр · педикюр · уход · косметика</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee"><div class="marqueeInner">MANICURE &nbsp; — &nbsp; PEDICURE &nbsp; — &nbsp; CARE &nbsp; — &nbsp; COSMETICS &nbsp; — &nbsp; KAZAN &nbsp; — &nbsp; ИСКУССТВО &nbsp; — &nbsp; MANICURE &nbsp; — &nbsp; PEDICURE &nbsp; — &nbsp; CARE</div></div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Ритуалы ухода</div><h2>Выберите своё</h2></div>
+      <div class="copy">В первом экране — эмоция бренда. Здесь — ясность: основные услуги и цены, чтобы клиенту не приходилось искать прайс по разным площадкам.</div>
+    </div>
+    <div class="serviceGrid">
+      <div class="serviceBig">
+        <div class="eyebrow">Маникюр</div>
+        <h3>Чистая форма. Точный цвет.</h3>
+        <div class="priceList">
+          <div class="price"><span>Маникюр без покрытия</span><span>1 600 ₽</span></div>
+          <div class="price"><span>Мужской маникюр</span><span>1 800 ₽</span></div>
+          <div class="price"><span>Маникюр с покрытием лаком</span><span>1 900 ₽</span></div>
+          <div class="price"><span>Японский маникюр</span><span>1 900 ₽</span></div>
+        </div>
+      </div>
+      <div class="serviceSmall">
+        <div class="eyebrow">Педикюр</div>
+        <h3>Комфорт в каждой детали</h3>
+        <div class="priceList">
+          <div class="price"><span>Педикюр без покрытия</span><span>1 800 ₽</span></div>
+          <div class="price"><span>Педикюр с покрытием лаком</span><span>2 100 ₽</span></div>
+        </div>
+        <div class="orb"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Не только результат</div><h2>Комфорт — часть услуги</h2></div>
+      <div class="copy">По описанию студии, для клиентов предусмотрены мелочи, которые сильно влияют на впечатление от визита.</div>
+    </div>
+    <div class="comfort">
+      <div class="comfortCard"><div class="icon">01</div><h3>Пледы</h3><p>Чтобы длинная процедура оставалась комфортной.</p></div>
+      <div class="comfortCard"><div class="icon">02</div><h3>Зарядки</h3><p>Телефон можно зарядить прямо во время визита.</p></div>
+      <div class="comfortCard"><div class="icon">03</div><h3>Большой экран</h3><p>Фильм или видео превращает время процедуры в отдых.</p></div>
+      <div class="comfortCard"><div class="icon">04</div><h3>Забота о деталях</h3><p>Подставки для сумок и продуманное клиентское пространство.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="trust">
+      <div class="score">
+        <div class="eyebrow">Доверие</div>
+        <div class="scoreNum">5,0</div>
+        <div class="stars">★★★★★</div>
+        <p>350+ оценок на Яндексе<br>«Хорошее место 2026»</p>
+      </div>
+      <div class="trustCopy">
+        <div class="eyebrow">Что отмечают клиенты</div>
+        <blockquote>Дружелюбная атмосфера, внимательный персонал и профессиональный сервис.</blockquote>
+        <p>Сильная репутация уже работает на студию. На отдельном сайте она оказывается рядом с прайсом и записью — ровно в момент, когда человек принимает решение.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="gift">
+      <div>
+        <div class="eyebrow" style="color:#f2c9b6">Подарочный сертификат</div>
+        <h3>Подарить время для себя</h3>
+        <p>Отдельный сценарий для клиента, который пришёл не записываться, а ищет красивый и понятный подарок.</p>
+        <div class="actions"><a class="btn" style="background:white;color:#5b2e31;border-color:white" href="https://taplink.cc/iskusstvo.studio" target="_blank" rel="noopener">Узнать подробнее</a></div>
+      </div>
+      <div class="ticket">
+        <div class="ticketTop"><span>ИСКУССТВО</span><span>GIFT</span></div>
+        <div class="ticketTitle">Подарочный<br>сертификат</div>
+        <div class="ticketLine"></div>
+        <p style="color:#78655b;font-size:13px">для красивого повода и без повода</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Контакты</div><h2>Приходите в «Искусство»</h2></div>
+      <div class="copy">Все ключевые действия — запись, звонок и соцсети — собраны в одном месте и удобно работают с телефона.</div>
+    </div>
+    <div class="contactGrid">
+      <div class="contactCard">
+        <div class="eyebrow">Студия «Искусство»</div>
+        <h3>Казань</h3>
+        <div class="rows">
+          <div class="row"><span>Адрес</span><span>Чистопольская, 74</span></div>
+          <div class="row"><span>Режим</span><span>ежедневно 09:00–21:00</span></div>
+          <div class="row"><span>Телефон</span><span>+7 960 064-74-74</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn wine" href="https://taplink.cc/iskusstvo.studio" target="_blank" rel="noopener">Онлайн-запись</a>
+          <a class="btn" href="https://vk.com/iskusstvo.studio" target="_blank" rel="noopener">VK</a>
+          <a class="btn" href="tel:+79600647474">Позвонить</a>
+        </div>
+      </div>
+      <div class="mapCard"><div class="pin"><span>И</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="eyebrow">ИСКУССТВО · КАЗАНЬ</div>
+    <h2>Ваше время. Ваш уход. Ваше настроение.</h2>
+    <p>Выберите удобную услугу и время в действующей системе онлайн-записи студии.</p>
+    <a class="btn primary" href="https://taplink.cc/iskusstvo.studio" target="_blank" rel="noopener">Записаться онлайн</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>Демо-концепция сайта · 2026</span>
+    <span>Не является официальным сайтом студии «Искусство»</span>
+  </div>
+</footer>
+<a class="sticky" href="https://taplink.cc/iskusstvo.studio" target="_blank" rel="noopener">Записаться в «Искусство»</a>
+</body>
+</html>
